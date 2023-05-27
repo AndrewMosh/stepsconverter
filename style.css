@@ -1,0 +1,56 @@
+body {
+  background: url(pic.png) rgba(0, 0, 0, 0.738);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.converter {
+  max-width: 100%;
+  background: rgba(255, 255, 255, 0.248);
+  margin: 180px;
+  padding: 20px 100px 20px 100px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.converter h2,
+.converter h3,
+.converter p,
+footer {
+  color: azure;
+  text-align: center;
+}
+
+#btn {
+  border: none;
+  text-decoration: none;
+  color: rgb(47, 45, 45);
+  background-color: white;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  margin: 8px;
+}
+#steps:focus {
+  background-color: rgba(0, 0, 0, 0.277);
+  color: white;
+}
+#btn:hover {
+  background-color: rgba(0, 0, 0, 0.507);
+  color: white;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+#steps {
+  width: 230px;
+  border-radius: 5px;
+}
+@media (max-width: 528px) {
+  .converter {
+    transform: scale(0.7);
+    margin: 0;
+  }
+}
