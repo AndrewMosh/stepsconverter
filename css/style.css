@@ -1,5 +1,5 @@
 body {
-  background: url(pic.png) rgba(0, 0, 0, 0.738);
+  background: url("../images/pic.png") rgba(0, 0, 0, 0.738);
   background-blend-mode: multiply;
   background-size: cover;
   background-repeat: no-repeat;
@@ -54,4 +54,56 @@ footer {
     transform: scale(0.7);
     margin: 0;
   }
+}
+.bouncer-container {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(94, 94, 94);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bouncer {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.bouncer div {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 145, 0);
+  border-radius: 50%;
+  animation: bouncer 0.5s cubic-bezier(0.19, 0.57, 0.3, 0.98) infinite alternate;
+}
+
+@keyframes bouncer {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+.bouncer div:nth-of-type(1) {
+  opacity: 0.6;
+}
+
+.bouncer div:nth-of-type(2) {
+  opacity: 0.5;
+  animation-delay: 0.1s;
+}
+
+.bouncer div:nth-of-type(3) {
+  opacity: 0.4;
+  animation-delay: 0.2s;
+}
+
+.bouncer div:nth-of-type(4) {
+  opacity: 0.2;
+  animation-delay: 0.3s;
 }

@@ -21,3 +21,14 @@ function clear() {
   km.innerHTML = "";
   calories.innerHTML = "";
 }
+document.addEventListener("DOMContentLoaded", () => {
+  const preloader = document.querySelector(".bouncer-container");
+  preloader.style.display = "none";
+});
+
+window.addEventListener("beforeunload", () => {
+  const preloader = document.querySelector(".bouncer-container");
+  const bouncer = document.querySelector(".bouncer-container");
+  preloader.style.display = "flex";
+  bouncer.style.display = "none";
+});
